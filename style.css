@@ -44,6 +44,7 @@ main {
 
 .main-headline-1 {
   font-size: 140px;
+  text-align: center;
 }
 
 .main-headline-1 span {
@@ -52,6 +53,7 @@ main {
 
 .main-headline-2 {
   font-size: 60px;
+  text-align: center;
 }
 
 /* ここから修正予定 */
@@ -70,10 +72,12 @@ main {
 .main-content {
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 .main-content-item {
   width: 24%;
+  text-align: center;
 }
 
 .main-content-item:last-child {
@@ -136,4 +140,40 @@ footer {
 .footer-list a {
   color: #fff;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-headline-1 {
+    font-size: 100px;
+  }
+
+  .main-headline-2 {
+    font-size: 40px;
+  }
+
+  .main-content-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-headline-1 {
+    font-size: 75px;
+  }
+
+  .main-headline-2 {
+    font-size: 30px;
+  }
+
+  .main-body {
+    height: 850px;
+  }
+
+  .main-content {
+    flex-wrap: wrap;
+  }
+
+  .main-content-item {
+    width: 50%;
+  }
 }
