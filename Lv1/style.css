@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/* ここからCSSを記述してください */
+header {
+  width: 100%;
+  height: 90px;
+  margin: 0 auto;
+  background-color: #26d0c9;
+  display: flex;
+}
+
+.headline {
+  color: #fff;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.nav-list {
+  display: inline-block;
+  padding: 33px 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  width: 90%;
+  margin: 100px auto;
+}
+
+.main-headline-1 {
+  font-size: 140px;
+  text-align: center;
+}
+
+.main-headline-1 span {
+  color: #ff4a4a;
+}
+
+.main-headline-2 {
+  font-size: 60px;
+  text-align: center;
+}
+
+/* ここから修正予定 */
+.main-body {
+  margin-top: 100px;
+  height: 500px;
+}
+
+.main-title {
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #dee7ec;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content-item {
+  width: 24%;
+  text-align: center;
+}
+
+.main-content-item:last-child {
+  margin-right: 0;
+}
+
+.main-content-item p {
+  margin-top: 30px;
+  font-size: 24px;
+}
+/* ここまで修正予定 */
+
+.main-form {
+  padding-top: 100px;
+}
+
+input,
+textarea {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
+.main-submit {
+  background-color: #dee7ec;
+  color: #889eab;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  padding: 40px;
+  background-color: #2f5167;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.footer-headline {
+  font-size: 32px;
+  color: #fff;
+}
+
+.footer-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footer-list {
+  padding-bottom: 20px;
+}
+
+.footer-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-headline-1 {
+    font-size: 100px;
+  }
+
+  .main-headline-2 {
+    font-size: 40px;
+  }
+
+  .main-content-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-headline-1 {
+    font-size: 75px;
+  }
+
+  .main-headline-2 {
+    font-size: 30px;
+  }
+
+  .main-body {
+    height: 850px;
+  }
+
+  .main-content {
+    flex-wrap: wrap;
+  }
+
+  .main-content-item {
+    width: 50%;
+  }
+}
